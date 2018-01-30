@@ -5,7 +5,7 @@
 #'
 #' @param x a vector of distances
 #' @param s a vector of random samples from the estimated spectral density
-#' @return a vector or some shit I dunno
+#' @return a vector
 mc <- function(x, s) {
     .Call(`_gpumc_mc`, x, s)
 }

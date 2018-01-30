@@ -8,7 +8,7 @@ void mcCuda(double *vec, double *samps, double *mat, int N, int S);
 //'
 //' @param x a vector of distances
 //' @param s a vector of random samples from the estimated spectral density
-//' @return a vector or some shit I dunno
+//' @return a vector
 // [[Rcpp::export]]
 NumericVector mc(NumericVector x, NumericVector s) {
   int n = x.size();

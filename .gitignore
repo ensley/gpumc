@@ -7,8 +7,8 @@
 
 # RStudio files
 .Rproj.user/
-.Rdata
-.Rproj
+.RData
+*.Rproj
 
 # produced vignettes
 vignettes/*.html

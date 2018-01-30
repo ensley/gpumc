@@ -1,0 +1,16 @@
+Package: gpumc
+Type: Package
+Title: GPU-Accelerated Monte Carlo Estimation of a Gaussian Process Covariance Matrix
+Version: 0.1.0
+Authors@R: person('John', 'Ensley', email = 'johnensley17@gmail.com', role = c('aut', 'cre'))
+Description: This package is a wrapper around a single function, mc(). This function 
+    takes a vector of observations from a Gaussian process and a vector of random samples
+    from a spectral density and estimates the covariance matrix between the observations. 
+    The covariance matrix is estimated elementwise, and can be pretty large, so the operation
+    is sped up with parallel computing on a GPU. You must have a CUDA-enabled GPU on your
+    machine to install this package!
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 0.12.12)
+LinkingTo: Rcpp

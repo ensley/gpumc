@@ -8,7 +8,7 @@ __device__ double mcCalc(double x, double *d_samps, int S)
 	double total = 0.0f;
 	for (int i = 0; i < S; i++)
 	{
-		total += cos(x * d_samps[i]);
+		total += d_samps[i] * j0(x * d_samps[i]);
 	}
 	return total / S;
 }
